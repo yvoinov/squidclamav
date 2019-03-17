@@ -18,7 +18,7 @@ my $recover = CGI::escapeHTML($cgi->param('recover')) || '';
 $recover =~ s/^\(null\)$//;
 my $default_recoverurl = 'https://' . $cgi->server_name() . "/recover/?id=" if ($recover);
 
-my $TITLE_VIRUS = "SquidClamAv $VERSION: Обнаружен угроза!";
+my $TITLE_VIRUS = "SquidClamAv $VERSION: Обнаружена угроза!";
 my $subtitle = 'Имя угроза';
 my $errorreturn = 'Этот файл не может быть загружен.';
 my $urlerror = 'содержит угроза';
